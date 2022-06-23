@@ -17,8 +17,13 @@
       "browser": "firefox"
     },
     "env3": {
-      "os": "OS X",
-      "browser": "safari"
+      "browser": "internet explorer"
+    },
+      "env4": {
+      "browser": "edge"
+    },
+      "env5": {
+      "browser": "opera"
     }
   }
 }
