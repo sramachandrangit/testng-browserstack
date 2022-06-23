@@ -17,21 +17,21 @@ public class SujathaParallelTest extends BrowserStackTestNGTest {
     	  
         // navigate to Amazon
         driver.get("https://www.Landonhomes.com");
-                    
+        
+        WebDriverWait wait = new WebDriverWait(driver,30);            
         
         // Check the contact details on Landonhomes page
-        driver.findElement(By.xpath("/html/body/div[2]/div/div[2]")).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div[2]")));
         String NewReleaseText = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]")).getText();
         Assert.assertEquals(NewReleaseText, "Chat with Landon!  |  469-804-5534");
 
        
         // Check the search community
-        driver.findElement(By.xpath("/html/body/div[5]/div/div/h1")).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[5]/div/div/h1")));
         String CommunityButtonName= driver.findElement(By.xpath("/html/body/div[5]/div/div/h1")).getText();
         Assert.assertEquals(CommunityButtonName, "I’m looking for a...");
         
         // Check the available community link and click it
-        WebDriverWait wait = new WebDriverWait(driver,30);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//html/body/div[5]/div/div/div/ul/li[1]/a")));
         Assert.assertTrue(driver.findElement(By.xpath("//html/body/div[5]/div/div/div/ul/li[1]/a")).isDisplayed());
        // driver.findElement(By.xpath("//html/body/div[5]/div/div/div/ul/li[1]/a")).click();
