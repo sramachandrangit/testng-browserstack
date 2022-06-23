@@ -21,9 +21,6 @@
     },
       "env4": {
       "browser": "edge"
-    },
-      "env5": {
-      "browser": "opera"
     }
   }
 }
