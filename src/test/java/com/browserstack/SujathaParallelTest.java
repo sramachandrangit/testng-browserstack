@@ -15,7 +15,7 @@ public class SujathaParallelTest extends BrowserStackTestNGTest {
     @Test
     public void test() throws Exception {
     	  
-        // navigate to Amazon
+        // navigate to LandonHomes website
         driver.get("https://www.landonhomes.com");
         
         WebDriverWait wait = new WebDriverWait(driver,55);            
