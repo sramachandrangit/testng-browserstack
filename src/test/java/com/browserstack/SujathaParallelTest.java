@@ -16,9 +16,9 @@ public class SujathaParallelTest extends BrowserStackTestNGTest {
     public void test() throws Exception {
     	  
         // navigate to Amazon
-        driver.get("https://www.Landonhomes.com");
+        driver.get("https://www.landonhomes.com");
         
-        WebDriverWait wait = new WebDriverWait(driver,40);            
+        WebDriverWait wait = new WebDriverWait(driver,55);            
         
         // Check the contact details on Landonhomes page
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div[2]")));
