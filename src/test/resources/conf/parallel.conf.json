@@ -21,6 +21,10 @@
     },
       "env4": {
       "browser": "edge"
+    },
+      "env5": {
+       "os": "OS X",
+      "browser": "safari"
     }
   }
 }
